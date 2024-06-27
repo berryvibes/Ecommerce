@@ -1,0 +1,455 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image: url(black.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* nav bar */
+
+
+nav li a:hover{
+    background-color: gainsboro;
+    /* display: block; */
+    color:#04aa6d;
+
+    
+}
+
+nav #label{
+    /* font-family: 'Sofia', cursive; */
+    font-family: 'Aladin', cursive;
+        font-weight: 700;
+        font-size: 30px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-family: sans-serif;
+    border-radius: 5px;
+    /* padding: 10px; */
+}
+
+nav form button a{
+    text-decoration: none;
+    color: black;
+}
+/* end of nav */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start of div1 */
+
+.shop{
+
+    padding: 150px;
+    margin-top: 150px;
+    
+}
+
+.shop h1{
+    text-align: right;
+    font-size: 60px;
+    text-transform: uppercase;
+    /* width: 30%; */
+    /* position: relative;
+    left: 140px; */
+    color: white;
+    
+}
+
+.shop button{
+    margin-left: 750px;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    width: 25%;
+}
+
+.shop button a{
+    text-decoration: none;
+    color: brown;
+}
+
+
+.shop button:hover{
+    background-color: thistle;
+    color: white;
+}
+
+
+.what{
+    text-align: right;
+   /* text-transform: uppercase; */
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+      /* font-family: 'Sofia', cursive; */
+      /* text-shadow:  2px 2px 30px black; */
+   color: white;
+   font-size: 30px;
+   margin-left: 0px;
+   font-weight: 900;
+}
+
+
+/* End of div1 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Form Start */
+
+.division{
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+
+
+.login{
+    /* float: left; */
+    /* padding: 16px; */
+    margin-top: 10px;
+    margin-bottom: 150px;
+    width: 70%;
+}
+
+.form{
+    height: 100%;
+    width:100%;
+    /* background-color:#222; */
+    /* border-radius: 10px; */
+    /* border: 2px solid black;
+    box-shadow: 0 0 20px rgba(8, 7, 16, 0.6); */
+    padding: 50px 35px;
+    margin-left: 10px;
+    border-right: 2px solid black;
+}
+
+.formm{
+    height: 100%;
+    width: 100%;
+    /* background-color:#222; */
+    border-radius: 10px;
+    /* border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(8, 7, 16, 0.6); */
+    padding: 50px 35px;
+    margin-right: 100px;
+}
+
+form * {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+
+}
+
+.username{
+    
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    /* border-radius: 13px; */
+    padding: 0 10px;
+    margin-bottom: 58px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #080710;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+}
+
+.username1{
+    
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    /* border-radius: 13px; */
+    padding: 0 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #080710;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+}
+
+.textarea{
+    width: 100%;
+    height: 70%;
+    border-radius: 9px;
+    padding: 20px;
+    border: 2px solid black;
+    color: #000;
+}
+
+.but{
+    margin-top: 20px;
+    width: 40%;
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 120px;
+}
+
+.but:hover{
+    background-color: #04aa6d;
+}
+
+/* End of Form */
+
+
+
+
+
+
+/* Footer */
+#link a{
+    text-decoration: none;
+    color: white;
+}
+
+#link p a:hover{
+    color:sienna;
+}
+/* End of footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media (max-width: 952px){
+
+}
+
+
+
+
+
+@media (max-width: 858px){
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+
+
+
+
+
+
+
+/* Start of div1 */
+.shop{
+    display: grid;
+    text-align: center;
+    margin-left: -100px;
+    width: 100%;
+    margin-bottom: 50px;
+    /* margin-top: -150px; */
+}
+
+
+.shop h1{
+    width: 200%;
+    /* margin-left: -20px; */
+    font-size: 30px;
+    text-align: center;
+    color:tomato;
+}
+
+.what{
+    text-align: center;
+    width: 180%;
+    color:black;
+    font-size: 20px;
+}
+
+.shop button{
+    margin-left: 60px;
+    width: 80%;
+    background-color: tomato;
+    color: white;
+}
+/* End of div1 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start */
+.division{
+    display: grid;
+    width: 10%;
+    margin-left: 1px;
+    margin-top: -180px;
+}
+
+.login{
+    width: 100%;
+    /* height: 30%; */
+    display: grid; 
+}
+
+.form{
+    border: none;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.formm{
+    border: none;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.but{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    margin-left: 10px;
+    color: white;
+    background-color: #222;
+    margin-top: 30px;
+   }
+
+
+
+}

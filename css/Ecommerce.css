@@ -1,0 +1,865 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(177, 101, 7);
+    background-image: url(skiin.webp);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+
+
+
+
+
+
+nav li a:hover{
+    background-color: gainsboro;
+    /* display: block; */
+    color:#04aa6d;
+
+    
+}
+
+nav form button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/* Start of div1 */
+
+.shop{
+
+    padding: 150px;
+    margin-top: 50px;
+    
+}
+
+.shop h1{
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    /* width: 30%; */
+    /* position: relative;
+    left: 140px; */
+    color: white;
+    
+}
+
+.shop button{
+    margin-left: 450px;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+}
+
+.shop button a{
+    text-decoration: none;
+    color: brown;
+}
+
+
+.shop button:hover{
+    background-color: thistle;
+    color: white;
+}
+
+/* End of div1 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start of div2 */
+
+#div2{
+
+    /* display: flex; */
+    /* float: left; */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    /* width: 100%; */
+    overflow: hidden;
+
+}
+
+#body{
+
+    /* display:flex ; */
+    float: left;
+    width: 70%;
+    height: 100%;
+    padding: 19px;
+    /* margin-left: 35px; */
+
+}
+
+#body1{
+
+    float: left;
+    width: 30%;
+    padding: 19px;
+    margin-right: 0px;
+    height: 100%;
+
+}
+
+#body1 button{
+    width: 50%;
+    padding: 8px;
+    border: none;
+    background-color: antiquewhite;
+    position: relative;
+    left: 25%;
+}
+
+#body1 button a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+#body1 button:hover{
+    color: white;
+    background-color: turquoise;
+}
+
+#body1 button:visited{
+    background-color: tomato;
+}
+
+
+#body1 h4{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#body1 p{
+    text-align: center;
+    margin-top: -10px;
+}
+
+.bodyimage{
+    width: 100%;
+}
+
+.bodyimage1{
+    width: 100%;
+}
+/* End of div2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start of price card */
+
+.price{
+
+    display: flex;
+    /* float: left; */
+    /* justify-content: center;
+    align-items: flex-start; */
+    margin-top: 20px;
+    /* flex-direction: row; */
+    /* width: 25%; */
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+
+}
+
+.price h3{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+
+.card1{
+
+    /* float: left; */
+    width: 22%;
+    text-align: center;
+    padding: 0px;
+    /* margin: 15px 10px; */
+    margin-left: 30px;
+    border: none;
+    /* border-radius: 40px; */
+    height: 100%;
+    transition: transfrom 0.2s;
+    box-shadow:  0px 5px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.card2{
+
+    float: left;
+    width: 47%;
+    text-align: center;
+    padding: 10%;
+    /* margin: 15px 10px; */
+    margin-left: 30px;
+    border: none;
+    /* border-radius: 40px; */
+    height: 100%;
+    transition: transfrom 0.2s;
+    box-shadow:  0px 5px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.card2 p{
+    font-size: 35px ;
+    margin-top: 40px;
+    border: 5px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+.card1 h6{
+
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: left;
+    
+
+}
+
+.top-left{
+    /* position: absolute; */
+    position: relative;
+    top: 30px;
+    left: -113px;
+    color: white;
+    background-color:tomato;
+    padding: 5px;
+    font-size: 10px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.card1 p{
+
+    font-size: 20px;
+    margin-bottom: 80px;
+    text-align: left;
+    font-weight: 500;
+    color: violet;
+
+}
+
+
+
+.card1 button{
+    /* background-color: #333; */
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    width: 50%;
+    background-color: antiquewhite;
+    position: relative;
+    /* left: 25%; */
+    margin-bottom: 20px;
+}
+
+
+.card img{
+    width: 20%;
+}
+
+
+.card1:hover{
+    transform: translateY(-10px);
+    cursor: grab;
+}
+
+
+.card1 button:hover{
+    color: white;
+    background-color: turquoise;
+}
+
+
+.card1 button a{
+    text-decoration: none;
+    color:teal;
+}
+/* End of price card */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start of price1 card */
+
+.price1{
+
+    display: flex;
+    /* float: left; */
+    /* justify-content: center;
+    align-items: flex-start; */
+    margin-top: 50px;
+    /* flex-direction: row; */
+    /* width: 25%; */
+
+}
+
+
+.card3{
+
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding: 20px;
+    /* margin: 15px 10px; */
+    /* margin-left: 35px; */
+    border: none;
+    /* border-radius: 40px; */
+    height: 100%;
+    transition: transfrom 0.2s;
+    /* box-shadow:  0px 5px 6px rgba(0, 0, 0, 0.1); */
+
+}
+
+
+/* End of price2 card */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start of Price 11 */
+.price11{
+
+    display: flex;
+    /* float: left; */
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    /* flex-direction: row; */
+    /* width: 25%; */
+    margin-bottom:50px ;
+    padding: 20px;
+    margin-right: 5px;
+
+}
+
+
+.price11 h3{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+.card1{
+
+    /* float: left; */
+    width: 25%;
+    text-align: center;
+    padding: 0px;
+    /* margin: 15px 10px; */
+    margin-left: 10px;
+    border: none;
+    /* border-radius: 40px; */
+    height: 100%;
+    transition: transfrom 0.2s;
+    box-shadow:  0px 5px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.card1 h6{
+
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: left;
+    
+
+}
+
+
+.card1 p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: 500;
+    color: violet;
+}
+
+.card1 button{
+    /* background-color: #333; */
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    width: 50%;
+    background-color: antiquewhite;
+    position: relative;
+    /* left: 25%; */
+    margin-bottom: 20px;
+}
+
+
+.card1:hover{
+    transform: translateY(-10px);
+}
+
+
+.card1 button:hover{
+    color: white;
+    background-color: turquoise;
+}
+/* End of price11 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* slideshow */
+.background1{
+    /* background-color: #283106; */
+    display: grid;
+    place-items: center;
+    height: 50vh;
+
+}
+
+.gallery{
+    display: flex;
+    left: calc(50% - 330px);
+}
+
+.yard{
+    position: relative;
+    left: 0px;
+    width: 150px;
+    height: 170px;
+    background-color: #6b626c;
+    border-radius: 8px;
+    transition: 0.7s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+.yard:not(:first-child){
+    margin-left: -45px;
+}
+
+.yard:hover{
+    transform: translateY(-36px);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.yard:hover ~ .yard{
+    left: 55px;
+}
+
+.yard img{
+    height: 170px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+    margin-top: 150px;
+}
+
+footer  a{
+    text-decoration: none;
+    /* list-style-type: none; */
+    text-align: left;
+    color: #d4d4d4;
+}
+
+footer li{
+    list-style-type: none;
+    text-align: left;
+    font-size: 17px;
+    
+}
+
+footer a:hover{
+    color:aqua;
+}
+/* end of footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 858px){
+
+    #headh5 h5{
+        font-size: 10px;
+    }
+    
+        /* start of price card */
+    .price, .price1, .price11{
+        display: grid;
+        padding: 0px;
+        margin-top: 20px;
+        margin-right: 4px;
+        margin-left: 40px;
+    }
+    
+    
+    .card1, .card3, .card4{
+        /* display: grid; */
+        width: 80%;
+    
+    }
+    
+    .card3{
+        margin-top: 40px;
+    }
+    
+    .card2{
+        width: 115%;
+        margin-top: 50px;
+        display: grid;
+        margin-left: -50px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #carousel h5{
+        font-size: 20px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+/* Start of div1 */
+    .shop{
+        display: grid;
+        text-align: center;
+        margin-left: -100px;
+        width: 100%;
+        /* margin-top: -150px; */
+    }
+
+
+    .shop h1{
+        width: 150%;
+        /* margin-left: -20px; */
+        font-size: 40px;
+        text-align: center;
+        color:tomato;
+    }
+
+
+    .shop button{
+        margin-left: 60px;
+        width: 80%;
+        background-color: tomato;
+        color: white;
+    }
+/* End of div1 */
+
+
+
+
+
+
+/* .yard{
+    display: grid;
+} */
+
+.background1{
+    width: 20%;
+
+}
+
+.gallery{
+    display: flex;
+    width: 350px;
+    margin-left: 30px;
+ 
+}
+
+.yard img{
+     object-fit: cover;
+     width: 100px;
+}
+
+
+
+/* Start of div2 */
+#div2{
+    display: grid;
+}
+
+.div2{
+    margin-top: -10000px;
+}
+
+#body, #body1{
+    width: 100%;
+    display: grid;
+}
+
+
+/* end of div2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start of price card */
+.price, .price1, .price11{
+    display: grid;
+    padding: 0px;
+    margin-top: 20px;
+    margin-right: 4px;
+    margin-left: 40px;
+}
+
+
+.card1, .card3, .card4{
+    /* display: grid; */
+    width: 80%;
+
+}
+
+.card3{
+    margin-top: 40px;
+}
+
+.card2{
+    width: 115%;
+    margin-top: 50px;
+    display: grid;
+    margin-left: -50px;
+}
+
+
+
+}

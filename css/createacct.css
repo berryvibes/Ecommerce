@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color: rgb(177, 101, 7);
+    background-image: url(skiin.webp); */
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+
+
+
+
+/* Carousel start */
+#carousel h5{
+    font-size: 90px;
+}
+/* End of carousel */
+
+
+
+
+
+
+
+/* Start of nav bar */
+nav li a:hover{
+    background-color: gainsboro;
+    /* display: block; */
+    color:#04aa6d;
+
+    
+}
+
+
+nav form button a{
+    text-decoration: none;
+    color: black;
+}
+/* End of nav bar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Form Start */
+#division1{
+
+    margin-bottom: 100px;
+    width: 60%;
+    background-color:rosybrown;
+    transition: transfrom 0.2s;
+    /* border:  solid #283106 15px; */
+    border-radius: 64px 96px 128px 32px;
+    /* border-radius: 10px 100px / 120px 100px; */
+    box-shadow:  0px 5px 6px rgba(0, 0, 0, 0.1);
+}
+
+#division1:hover{
+    transform: translateY(-10px);
+    cursor:auto;
+}
+
+
+
+.form1{
+    height: 100%;
+    width:100%;
+    background-color:transparent;
+    /* border-radius: 10px; */
+    /* border: 2px solid black;
+    box-shadow: 0 0 20px rgba(8, 7, 16, 0.6); */
+    padding: 50px 35px;
+    margin-left: 10px;
+    /* border-right: 2px solid black; */
+}
+
+
+
+form select option{
+    background-color:tomato;
+}
+
+
+
+form * {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+
+ form label{
+    color: wheat;
+ }
+
+
+
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+form p{
+    margin-top: 30px;
+}
+
+form p a{
+    color: #283106;
+}
+
+form p a:hover{
+    color:red;
+}
+
+.p a{
+    text-decoration: none;
+    color: white;
+}
+
+#submit button:hover{
+    background-color: #04aa6d;
+}
+
+/* End of Form */
+/* End of Form */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+#link a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#link p a:hover{
+    color: tomato;
+}
+/* End of footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+#division{
+    display: grid;
+    width: 100%;
+    margin-left: 1px;
+    /* margin-top: -180px; */
+}
+
+.login{
+    width: 160%;
+    /* height: 30%; */
+    display: grid; 
+}
+
+.form1{
+    border: none;
+    /* width: 100%; */
+    margin-left: -60px;
+}
+
+
+form h3{
+    font-size: 20px;
+}
+
+
+#carousel h5{
+    font-size: 20px;
+}
+}
