@@ -1,0 +1,986 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Poppins&family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(177, 101, 7);
+    background-image: url(skiin.webp);
+    background-repeat: no-repeat;
+    background-size:112%;
+    
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: -1; /* Keeps it behind other content */
+    background-size:100%;
+
+}
+
+
+
+
+nav li a:hover{
+    background-color: gainsboro;
+    /* display: block; */
+    color:#04aa6d;
+
+    
+}
+
+nav form button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar-scroll{
+    background-color: rosybrown !important;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Start of div1 */
+
+.shop{
+
+    /* padding: 150px; */
+    margin-top: 24em;
+    margin-bottom: 19em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.shop h1{
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    /* width: 30%; */
+    /* position: relative;
+    left: 140px; */
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+    color: white;
+    
+}
+
+.shop button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+.shop button a{
+    text-decoration: none;
+    color: brown;
+}
+
+
+.shop button:hover{
+    background-color: thistle;
+    color: white;
+}
+
+/* End of div1 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start of div2 */
+
+#div2{
+
+
+    margin-top: 1em;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 2em 1.5em;
+
+}
+
+#body{
+
+    /* display:flex ; */
+    /* float: left; */
+    width: 70%;
+    /* height: 100%; */
+    /* padding: 19px; */
+    /* margin-left: 35px; */
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+
+}
+
+#body1{
+
+    /* float: left; */
+    width: 30%;
+    /* padding: 19px; */
+    margin-right: 0px;
+    /* height: 100%; */
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+#body1 button{
+    width: 50%;
+    padding: 8px;
+    border: none;
+    background-color: antiquewhite;
+    position: relative;
+    left: 25%;
+}
+
+#body1 button a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+#body1 button:hover{
+    color: white;
+    background-color: turquoise;
+}
+
+#body1 button:visited{
+    background-color: tomato;
+}
+
+
+#body1 h4{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#body1 p{
+    text-align: center;
+    margin-top: -10px;
+}
+
+.bodyimage{
+    width: 100%;
+}
+
+.bodyimage1{
+    width: 100%;
+}
+/* End of div2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start of price card */
+
+.price{
+
+    display: flex;
+    /* justify-content: center;
+    align-items: flex-start; */
+    margin-top: 20px;
+    /* flex-direction: row; */
+    /* width: 25%; */
+    /* margin-right: 20px;
+    margin-left: 20px; */
+    padding: 2em 3em;
+    margin-bottom: 40px;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    position: relative;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+
+}
+
+.price h3{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    /* max-width: 250px; */
+    height: 100%;
+    box-sizing: border-box;
+    /* padding: 20px; */
+    text-align: center;
+    /* padding: 1em; */
+    /* margin-left: 10px; */
+    border: none;
+    height: 100%;
+    transition: transfrom 0.2s;
+    box-shadow:  0px 5px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+}
+
+
+
+
+.card2{
+
+    /* float: left; */
+    width: 100%;
+    text-align: center;
+    padding: 10%;
+    /* margin: 15px 10px; */
+    /* margin-left: 30px; */
+    border: none;
+    /* border-radius: 40px; */
+    height: 100%;
+    transition: transfrom 0.2s;
+    box-shadow:  0px 5px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.card2 p{
+    font-size: 35px ;
+    margin-top: 40px;
+    border: 5px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+.card1 h6{
+
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+    
+
+}
+
+.top-left{
+    position: absolute;
+    /* position: relative; */
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    color: white;
+    background-color:tomato;
+    padding: 5px;
+    font-size: 10px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+
+.card1 button{
+    /* background-color: #333; */
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    width: 50%;
+    background-color: antiquewhite;
+    position: relative;
+    /* left: 25%; */
+    margin-bottom: 20px;
+}
+
+
+.card img{
+    width: 20%;
+}
+
+
+.card1:hover{
+    transform: translateY(-10px);
+    cursor: grab;
+}
+
+
+.card1 button:hover{
+    color: white;
+    background-color: turquoise;
+}
+
+
+.card1 button a{
+    text-decoration: none;
+    color:teal;
+}
+/* End of price card */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start of price1 card */
+
+.price1{
+
+    display: flex;
+    /* float: left; */
+    /* justify-content: center;
+    align-items: flex-start; */
+    margin-top: 50px;
+    /* flex-direction: row; */
+    /* width: 25%; */
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+
+}
+
+
+.card3{
+
+    /* float: left; */
+    width: 33.3%;
+    text-align: center;
+    padding: 20px;
+    /* margin: 15px 10px; */
+    /* margin-left: 35px; */
+    border: none;
+    /* border-radius: 40px; */
+    height: 100%;
+    transition: transfrom 0.2s;
+    /* box-shadow:  0px 5px 6px rgba(0, 0, 0, 0.1); */
+
+}
+
+
+/* End of price2 card */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start of Price 11 */
+
+.price11 h3{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2.5em;
+    font-weight: 700;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+
+
+.card1 h6{
+
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: left;
+    
+
+}
+
+
+.card1 p{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.card1 button{
+    /* background-color: #333; */
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    width: 50%;
+    background-color: antiquewhite;
+    position: relative;
+    /* left: 25%; */
+    margin-bottom: 20px;
+}
+
+
+.card1:hover{
+    transform: translateY(-10px);
+}
+
+
+.card1 button:hover{
+    color: white;
+    background-color: turquoise;
+}
+/* End of price11 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* slideshow */
+.background1{
+    /* background-color: #283106; */
+    display: grid;
+    place-items: center;
+    height: 50vh;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+.gallery{
+    display: flex;
+    left: calc(50% - 330px);
+}
+
+.yard{
+    position: relative;
+    left: 0px;
+    width: 150px;
+    height: 170px;
+    background-color: #6b626c;
+    border-radius: 8px;
+    transition: 0.7s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+.yard:not(:first-child){
+    margin-left: -45px;
+}
+
+.yard:hover{
+    transform: translateY(-36px);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.yard:hover ~ .yard{
+    left: 55px;
+}
+
+.yard img{
+    height: 170px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+
+
+
+#myBtn  {
+    /* display: none  !important; */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rosybrown;
+    color: white;
+    cursor: pointer;
+    padding: 1em .25em;
+    border-radius: 80px;
+    transition: opacity 0.3s;
+}
+
+
+
+
+#myBtn  img{
+    width: 50%;
+    transform: rotate(-90deg);
+    color: white;
+}
+
+
+/* footer */
+
+footer{
+    margin-top: 150px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+footer  a{
+    text-decoration: none;
+    /* list-style-type: none; */
+    text-align: left;
+    color: #d4d4d4;
+}
+
+footer li{
+    list-style-type: none;
+    text-align: left;
+    font-size: 17px;
+    
+}
+
+footer a:hover{
+    color:aqua;
+}
+/* end of footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 858px){
+
+
+    nav .navImg {
+        color: black !important;
+        font-weight: 900;
+    }
+
+    .navibra{
+        padding: none;
+        margin-top: none;
+    }
+ 
+    body{
+        background: none;
+    }
+    #headh5 h5{
+        font-size: 10px;
+    }
+
+
+    body::before {
+        background: none;
+    }
+    
+    .shop{
+        display: flex;
+        padding: 2em 2em;
+        margin-top: none;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+        /* start of price card */
+    .price, .price1, .price11{
+        display: flex;
+        flex-direction: column;
+        /* padding: 0px;
+        margin-top: 20px;
+        margin-right: 4px;
+        margin-left: 40px; */
+    }
+    
+
+    .card1 h6{
+        font-size: 1.1em;
+        text-align: center;
+    }
+    .gallery{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        padding: 2em 3em;
+    }
+    
+    .card1, .card3, .card4{
+        /* display: grid; */
+        width: 100%;
+    
+    }
+    
+    .card3{
+        margin-top: 40px;
+    }
+    
+    .card2{
+        width: 115%;
+        margin-top: 50px;
+        display: none;
+        margin-left: -50px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #carousel h5{
+        font-size: 20px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+    /* .navibra{
+        padding: 0em -11em !important;
+    } */
+    nav .navImg {
+        color: black !important;
+        font-weight: 900;
+    }
+/* Start of div1 */
+    .shop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* margin-left: -100px; */
+        width: 100%;
+        /* margin-top: -150px; */
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+
+    .shop h1{
+        width: 100%;
+        /* margin-left: -20px; */
+        font-size: 2em;
+        text-align: center;
+        color:tomato;
+    }
+
+    .shop h1 br{
+        display: none;
+    }
+
+    .shop button{
+        display: flex;
+        align-items: center;
+        /* margin-left: 60px; */
+        width: 80%;
+        background-color: tomato;
+        color: white;
+    }
+
+    .shop button a{
+        color: white;
+    }
+/* End of div1 */
+
+
+
+
+
+
+/* .yard{
+    display: grid;
+} */
+
+.background1{
+    width: 20%;
+
+}
+
+.gallery{
+    display: flex;
+    width: 350px;
+    /* margin-left: 30px; */
+ 
+}
+
+.yard img{
+     object-fit: cover;
+     width: 100px;
+}
+
+
+
+/* Start of div2 */
+#div2{
+    display: grid;
+}
+
+.div2{
+    margin-top: -10000px;
+}
+
+#body, #body1{
+    width: 100%;
+    display: grid;
+}
+
+
+/* end of div2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start of price card */
+.price, .price1, .price11{
+    /* display: grid;
+    padding: 0px;
+    margin-top: 20px;
+    margin-right: 4px;
+    margin-left: 40px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1em 1.5em;
+}
+
+
+.card1, .card3, .card4{
+    /* display: grid; */
+    width: 100%;
+    display: flex;
+    
+
+}
+
+.card3{
+    margin-top: 40px;
+}
+
+/* .card2{
+    width: 115%;
+    margin-top: 50px;
+    display: grid;
+    margin-left: -50px;
+} */
+
+
+
+}

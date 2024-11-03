@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce</title>
+  <link rel="stylesheet" type="text/css" href="css/font.css">
+  <link rel="icon" href="css/carrr.png" type="img/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap-grid.css.map">
+  <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.css">
+
+  <script src="bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+
+  <script src="https://kit.fontawesome.com/473ac6f407.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/brands.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/brands.min.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/fontawesome.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/fontawesome.min.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/regular.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/regular.min.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/solid.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/solid.min.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/v4-shims.css">
+</head>
+
+<body>
+
+
+
+
+
+  <!-- First Nav -->
+  <nav class="navbar bg sticky-top">
+    <div class="container-fluid px-2 mt-3 navibra">
+      <a class="navbar-brand  navImg text-white fw-bold fs-3" href="#"><img src="css/becare.png" width="55"><span
+          id="navImg">BERRYCARE</span></a>
+      <button class="navbar-toggler active bg-light" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title " id="offcanvasNavbarLabel">BERRYCARE</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Shop.html"> Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html"> Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Aboutus.html"> About</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+          </ul>
+
+          <form class="container-fluid justify-content-start">
+            <button class="btn btn-outline-success me-2" type="button"><a href="createacct.html"> Login</a></button>
+            <button class="btn btn-sm btn-outline-secondary" type="button"><a href="create.html">Create
+                Account</a></button>
+          </form>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End of first nav -->
+
+
+
+  <!-- Second nav -->
+  <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark   ">
+  <div class="container-fluid ">
+    <a class="navbar-brand" href="javascript:void(0)">BERRYVIBES</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="mynavbar">
+      <ul class="navbar-nav me-auto d-flex text-center ">
+        <li class="nav-item p-1">
+          <a class="nav-link text-white" href="javascript:void(0)" id="anc">Home</a>
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link text-white" href="javascript:void(0)" id="anc">About</a>
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link text-white" href="javascript:void(0)" id="anc">Contact</a>
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link text-white" href="javascript:void(0)" id="anc">Services</a>
+        </li>
+
+        <a class="navbar-brand justify-content-center" href="javascript:void(0)">BERRYVIBES</a>
+      </ul>
+
+      
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+
+      </form>
+    </div>
+  </div>
+</nav> -->
+  <!-- End of second nav -->
+
+
+
+
+
+  <!-- start of Div1 -->
+  <div class="container-fluid  shop1">
+
+    <div class="shop">
+      <h1>Favorites <br> The Next Big Thing</h1>
+      <button type="button"><a href="Shop.html">SHOP NOW</a></button>
+      <!-- <button>Shop Now</button> -->
+    </div>
+
+  </div>
+  <!-- End of div1 -->
+
+
+
+
+  <!-- start of div2 -->
+  <div class="div2" id="div2">
+
+    <div class="" id="body">
+      <img src="css/bodycare.png" class="bodyimage1">
+    </div>
+
+    <div class="" id="body1">
+      <img src="css/berrycar.png" class="bodyimage">
+      <h4>Just Launched</h4>
+      <p>Shop your favorite berry skin products</p>
+      <a href="shop.html"> <button>VIEW COLLECTION</button></a>
+    </div>
+
+  </div>
+  <!-- end of div2 -->
+
+
+
+
+
+
+
+
+  <!-- start of div3 -->
+  <div class="" id="div2">
+
+    <div class="" id="body1">
+      <img src="css/fenty.jpg" class="bodyimage">
+      <h4>Just Launched</h4>
+      <p>Shop your favorite berry skin products</p>
+      <a href="shop.html"> <button>VIEW COLLECTION</button></a>
+    </div>
+
+    <div class="" id="body">
+      <img src="css/berrycaree.png" class="bodyimage1">
+    </div>
+
+  </div>
+  <!-- end of div3 -->
+
+
+
+
+
+
+
+
+
+
+  <!-- start od div4 -->
+  <div class="" id="div2">
+
+    <div class="" id="body">
+      <img src="css/care.png" class="bodyimage1">
+    </div>
+
+    <div class="" id="body1" style="height: 100%;">
+      <img src="css/skincare.webp" class="bodyimage">
+      <h4>Just Launched</h4>
+      <p>Shop your favorite berry skin products</p>
+      <a href="shop.html"> <button>VIEW COLLECTION</button></a>
+    </div>
+
+  </div>
+  <!-- end of div4 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Start of price card -->
+  <div class="price">
+
+    <!-- <h3>Just Arrived</h3> -->
+    <div class="card1">
+      <span class="top-left"> New </span>
+      <img src="css/retouch.jpg" width="100%">
+      <h6>ProFilt'r Instant Retouch Concealer</h6>
+      <p>$5.00</p>
+      <button><a href="Shop.html">Buy Now </a></button>
+    </div>
+
+
+    <div class="card1">
+      <span class="top-left"> New </span>
+      <img src="css/powder.jpg" width="100%">
+      <h6>ProFilt'r Soft Matte Powder Foundation</h6>
+      <p>$5.00</p>
+      <button><a href="Shop.html">Buy Now </a></button>
+    </div>
+
+
+    <div class="card1">
+      <span class="top-left"> New </span>
+      <img src="css/fluid.jpg" width="100%">
+      <h6>Liquid Killawatt Fluid Freestle </h6>
+      <p>$5.00</p>
+      <button><a href="Shop.html">Buy Now </a></button>
+    </div>
+
+
+    <div class="card1">
+      <span class="top-left"> New </span>
+      <img src="css/eyeshadow.jpg" width="100%">
+      <h6>Snap Shadows Mix & Match</h6>
+      <p>$5.00</p>
+      <button><a href="Shop.html">Buy Now </a></button>
+    </div>
+
+  </div>
+  <!-- End of price card -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Start of price card 2 -->
+  <div class="price">
+
+    <div class="card1">
+      <span class="top-left"> New </span>
+      <img src="css/flawless.jpg" width="100%">
+
+      <h6>Charlotte Tilbury Airbrush Flawless</h6>
+      <p>$10.00</p>
+      <button><a href="Shop.html">Buy Now </a></button>
+    </div>
+
+
+    <div class="card1">
+      <span class="top-left"> New </span>
+      <img src="css/paper.jpg" width="100%">
+      <h6>Invisimatte Blotting Paper Foundation</h6>
+      <p>$6.00</p>
+      <button><a href="Shop.html">Buy Now </a></button>
+    </div>
+
+
+    <div class="card2" style="background-image: url(css/bodycare.png); background-size: cover;">
+      <p>DISCOVER THE BEST</p>
+      <p>DISCOVER THE BEST</p>
+    </div>
+
+
+  </div>
+  <!-- End of price card -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Start of price card 3 -->
+  <div class="price1">
+
+    <div class="card3">
+      <img src="css/retouch.jpg" width="100%">
+
+
+    </div>
+
+
+    <div class="card3">
+      <img src="css/powder.jpg" width="100%">
+
+    </div>
+
+
+    <div class="card3">
+      <img src="css/fluid.jpg" width="100%">
+
+    </div>
+
+
+  </div>
+  <!-- End of price card 3 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Start of last price card -->
+  <div class="price11">
+    <h3>Top Rated</h3>
+  </div>
+  <div class="price">
+
+
+    <div class="card1">
+      <span class="top-left"> New </span>
+      <img src="css/retouch.jpg" width="100%">
+      <h6>ProFilt'r Instant Retouch Concealer</h6>
+      <p>$5.00</p>
+      <button><a href="Shop.html">Buy Now </a></button>
+
+    </div>
+
+
+    <div class="card1">
+      <span class="top-left"> New </span>
+      <img src="css/powder.jpg" width="100%">
+      <h6>ProFilt'r Soft Matte Powder Foundation</h6>
+      <p>$5.00</p>
+      <button><a href="Shop.html">Buy Now </a></button>
+    </div>
+
+
+    <div class="card1">
+      <span class="top-left"> New </span>
+      <img src="css/fluid.jpg" width="100%">
+      <h6>Liquid Killawatt Fluid Freestle </h6>
+      <p>$5.00</p>
+      <button><a href="Shop.html">Buy Now </a></button>
+    </div>
+
+
+    <div class="card1">
+      <span class="top-left"> New </span>
+      <img src="css/eyeshadow.jpg" width="100%">
+      <h6>Snap Shadows Mix & Match </h6>
+      <p>$5.00</p>
+      <button><a href="Shop.html">Buy Now </a></button>
+    </div>
+
+  </div>
+
+  <!-- end of price card -->
+
+
+
+
+
+  <div class="background1">
+    <div class="price11">
+      <h3>Berry Rated</h3>
+    </div>
+    <div class="gallery">
+
+      <div class="yard">
+        <figure>
+          <img src="css/powder.jpg" alt="face is good">
+        </figure>
+      </div>
+
+      <div class="yard">
+        <figure>
+          <img src="css/fluid.jpg" alt="face">
+        </figure>
+      </div>
+
+      <div class="yard">
+        <figure>
+          <img src="css/Haircare.avif" alt="face">
+        </figure>
+      </div>
+
+      <div class="yard">
+        <figure>
+          <img src="css/makeup1.avif" alt="face">
+        </figure>
+      </div>
+
+      <div class="yard">
+        <figure>
+          <img src="css/lux.jpg" alt="face">
+        </figure>
+      </div>
+
+      <div class="yard">
+        <figure>
+          <img src="css/flawless.jpg" alt="face">
+        </figure>
+      </div>
+
+      <div class="yard">
+        <figure>
+          <img src="css/skiin2.jpg" alt="face">
+        </figure>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div>
+    <button title="go to top" id="myBtn">
+      <img src="./css/Card Arrow.webp" alt="">
+    </button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-white p-4" style="background-color:rosybrown; ">
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">About Us</h6>
+            <hr style="width: 60px; height: 2px" />
+            <p>BERRYCARE shows the beauty of natural light and allows
+              you to reconnect with nature. The large single pane windows seamlessly
+              integrate the natural environment within your Ark. Enjoy a moment for
+              yourself and take time to unwind.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" id="link">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Patners</h6>
+            <hr style="width: 60px; height: 2px" />
+            <p><a href="#!">NIVEA</a></p>
+            <p><a href="#!">FENTY</a></p>
+            <p><a href="#!">SUAVE</a></p>
+            <p><a href="#!">DIOR</a></p>
+          </div>
+
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 " id="link">
+            <h6 class="text-uppercase fw-bold">Resources</h6>
+            <hr style="width: 60px; height: 2px" />
+            <p><a href="#!">Your Account</a></p>
+            <p><a href="#!">Advertise</a></p>
+            <p><a href="#!">Login</a></p>
+            <p><a href="#!">Help</a></p>
+          </div>
+
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="link">
+            <h6 class="text-uppercase fw-bold">Contact </h6>
+            <hr style="width: 60px; height: 2px" />
+            <p><i class="fas fa-home mr-3"></i><a href="#!"> Lagos, Nigeria.</a></p>
+            <p><i class="fas fa-envelope mr-3"></i><a href="#!">bolawoleayo@gmail.com</a> </p>
+            <p><i class="fas fa-phone mr-3"></i><a href="#!">+234 90 664 985 50</a> </p>
+            <p><i class="fas fa-print mr-3"></i><a href="#!">+234 90 664 985 50</a> </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" id="link">
+      © 2023 Copyright:
+      <a href="New site.html">BERRYVIBES</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
