@@ -102,10 +102,10 @@ nav form button a{
   }
 
 
-.login:hover{
+/* .login:hover{
     transform: translateY(-10px);
     cursor:auto;
-}
+} */
 
 
 
@@ -253,7 +253,39 @@ form p a:hover{
 
 
 
+/* General height for all carousel items */
+.carousel-item {
+  min-height: 400px; /* adjust this value as needed */
+}
 
+/* Ensure images fill the carousel item */
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item {
+  height: 600px; /* You can adjust this value */
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Optional: Make height larger on small screens */
+@media (max-width: 767px) {
+  .carousel-item {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 500px;
+  }
+}
 
 
 
@@ -271,6 +303,11 @@ form p a:hover{
 
 @media (max-width: 858px){
 
+        nav .navImg {
+        color: black !important;
+        font-weight: 900;
+    }
+
 
     .login{
         padding: 2em 2em;
@@ -282,6 +319,7 @@ form p a:hover{
     
     .form1{
         border: none;
+        padding: .5em 0em;
         /* width: 100%; */
         /* margin-left: -60px; */
     }
@@ -290,6 +328,23 @@ form p a:hover{
     form h3{
         font-size: 20px;
     }
+
+      #carousel {
+    margin-top: 30em;
+  }
+
+  #carousel h5 {
+    font-size: 2em;
+    margin-top: 31em;
+  }
+
+  #carousel p {
+    font-size: 1em;
+  }
+
+  #carousel-inner img {
+    width: 200%;
+  }
 }
 
 
@@ -299,9 +354,13 @@ form p a:hover{
 @media (max-width:768px){
 
 
-
+    nav .navImg {
+        color: black !important;
+        font-weight: 900;
+    }
 .login{
-    padding: 2em 2em;
+    padding: 2em 1em;
+    margin-top: 4em;
     width: 100%;
     /* height: 30%; */
     display: flex; 
@@ -311,6 +370,8 @@ form p a:hover{
 .form1{
     border: none;
     /* width: 100%; */
+        padding: .5em 0em;
+
     /* margin-left: -60px; */
 }
 

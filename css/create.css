@@ -15,8 +15,19 @@ body{
 
 
 /* Carousel start */
-#carousel h5{
-    font-size: 90px;
+/* Carousel start */
+#carousel h5 {
+  font-size: 90px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.carousel{
+  animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+#carousel p {
+  animation: myAnim 2s ease 0s 1 normal forwards;
+  font-size: 2em;
 }
 
 
@@ -62,10 +73,10 @@ nav form button a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    place-content: center;
+    /* place-content: center; */
     margin-bottom: 4em;
     margin-top: 4em;
-    padding: 2em 4em;
+    padding: 2em 39em;
     /* width: 50%; */
     /* background-color:rosybrown; */
     /* background-color: rgba(255, 255, 255, 0.3); */
@@ -85,7 +96,7 @@ nav form button a{
     background-color: rgba(41, 33, 33, 0.3);
     /* backdrop-filter: blur(7px); */
 
-    max-width: 400px; /* Limit max width */
+   
     /* padding: 20px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -94,13 +105,13 @@ nav form button a{
 
 
 .login:hover{
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
     cursor:auto;
 }
 
-form input:hover{
+/* form input:hover{
     border: #283106 2px solid;
-}
+} */
 
 .form1{
     height: 100%;
@@ -128,6 +139,19 @@ form * {
     border: none;
 }
 
+.forms{
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    gap: 1em;
+    
+}
+
+.forms .formss input{
+    padding: .5em 5em;
+    width: 100%;
+    border-radius: .4em;
+}
 
 form label{
     color: wheat;
@@ -242,6 +266,39 @@ form p a:hover{
 
 
 
+/* General height for all carousel items */
+.carousel-item {
+  min-height: 400px; /* adjust this value as needed */
+}
+
+/* Ensure images fill the carousel item */
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item {
+  height: 600px; /* You can adjust this value */
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Optional: Make height larger on small screens */
+@media (max-width: 767px) {
+  .carousel-item {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 500px;
+  }
+}
 
 
 
@@ -295,8 +352,35 @@ form p a:hover{
         font-size: 20px;
     }
 
+    #division1{
+        padding: 1em;
+    }
+
+    .forms{
+        flex-direction: column;
+    }
 
 #carousel h5{
     font-size: 20px;
 }
+
+      #carousel {
+    margin-top: 30em;
+  }
+
+  #carousel h5 {
+    font-size: 2em;
+    margin-top: 31em;
+  }
+
+  #carousel p {
+    font-size: 1em;
+  }
+
+  #carousel-inner img {
+    width: 200%;
+  }
+/* .carousel{
+    display: none;
+} */
 }
