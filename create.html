@@ -14,9 +14,7 @@
   <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap-grid.css.map">
   <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.css">
-  <script src="bootstrap-5.3.1-dist/js/bootstrap.js"></script>
 
-  <script src="https://kit.fontawesome.com/473ac6f407.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
   <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/brands.css">
   <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
@@ -160,43 +158,43 @@
   <div class="container-fluid mt-5 " id="division1">
 
     <div class="login">
-      <form class="form1">
+      <form class="form1" id="signup-form">
         <h3> Create Account</h3><br>
 
         <div class="forms row">
           <div class="formss mb-3 mt-3 col-lg-6">
             <label for="text" class="form-label">Firstname:</label>
-            <input type="text" class="form-control" id="name" placeholder="Firstname" name="Firstname">
+            <input type="text" class="form-control" id="firstname" placeholder="Firstname" name="Firstname"  required>
           </div>
           <div class="formss mb-3 mt-3 col-lg-6">
             <label for="text" class="form-label">Lastname:</label>
-            <input type="text" class="form-control" id="name" placeholder="Lastname" name="Lastname">
+            <input type="text" class="form-control" id="lastname" placeholder="Lastname" name="Lastname" required>
           </div>
         </div>
 
         <div class="mb-3 mt-3">
           <label for="email" class="form-label">Email:</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
         </div>
 
         <div class="mb-3">
           <label for="pwd" class="form-label">Password:</label>
-          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
         </div>
 
         <div class="mb-3 mt-3">
           <label for="text" class="form-label">Phone:</label>
-          <input type="text" class="form-control" id="text" placeholder="Enter Phone" name="Firstname">
+          <input type="number" class="form-control" id="phone" placeholder="Enter Phone" name="phone" required>
         </div>
 
         <div class="mb-3 mt-3">
           <label for="text" class="form-label">City:</label>
-          <input type="text" class="form-control" id="text" placeholder="City" name="Firstname">
+          <input type="text" class="form-control" id="city" placeholder="City" name="city" required>
         </div>
 
         <div class="mb-3 mt-3">
           <label for="text" class="form-label">LGA:</label>
-          <input type="text" class="form-control" id="text" placeholder="Enter LGA" name="Firstname">
+          <input type="text" class="form-control" id="lga" placeholder="Enter LGA" name="lga" required>
         </div>
 
         <div class="mb-3 mt-3">
@@ -218,7 +216,7 @@
 
 
         <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-
+        
       </form>
     </div>
 
@@ -455,9 +453,9 @@
 
 
 
-  <script src="./js/script.js"></script>
-
-
+<script src="./js/script.js"></script>
+<script src="https://kit.fontawesome.com/473ac6f407.js" crossorigin="anonymous"></script>
+<script src="bootstrap-5.3.1-dist/js/bootstrap.js"></script>
 </body>
 
 </html>

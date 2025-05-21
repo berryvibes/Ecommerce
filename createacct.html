@@ -13,9 +13,7 @@
   <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap-grid.css.map">
   <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.css">
-  <script src="bootstrap-5.3.1-dist/js/bootstrap.js"></script>
 
-  <script src="https://kit.fontawesome.com/473ac6f407.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
   <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/brands.css">
   <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
@@ -152,7 +150,7 @@
 
   <div class="container" id="division1">
     <div class="login">
-      <form class="form1">
+      <form class="form1"  id="login-form">
         <h3 class="text-center">Login Here</h3><br>
         <fieldset>
           <div class="mb-3 mt-3">
@@ -412,9 +410,10 @@
 
 
 
-  <script src="./js/script.js"></script>
-
-
+<!-- <script src="./js/script.js"></script> -->
+<script type="module" src="./js/script.js"></script> <!-- ✅ -->
+<script src="bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+<script src="https://kit.fontawesome.com/473ac6f407.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
