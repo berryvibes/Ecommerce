@@ -411,7 +411,48 @@
 
 
 <!-- <script src="./js/script.js"></script> -->
-<script type="module" src="./js/script.js"></script> <!-- ✅ -->
+<!-- <script type="module" src="./js/script.js"></script> ✅ -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loginForm = document.getElementById("login-form");
+  if (loginForm) {
+    loginForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("pwd").value;
+
+      const response = await fetch("http://127.0.0.1:8000/api/auth/login/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+          password: password,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert("Login successful");
+        // save token or redirect here
+        localStorage.setItem("token", data.access); // ✅ store the right token
+        window.location.href = "Shop.html";
+        console.log(data);
+      } else {
+        alert("Login failed: " + (data.detail || "Unknown error"));
+        console.error("Login response:", data);
+      }
+    });
+  }
+});
+
+</script>
+<script src="sript.js"></script>
 <script src="bootstrap-5.3.1-dist/js/bootstrap.js"></script>
 <script src="https://kit.fontawesome.com/473ac6f407.js" crossorigin="anonymous"></script>
 </body>

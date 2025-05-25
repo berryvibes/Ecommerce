@@ -24,35 +24,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// document.getElementById("signup-form").addEventListener("submit", async function (e) {
-//     e.preventDefault();
+document.getElementById("signup-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-//     const data = {
-//       username: document.querySelector('input[name="email"]').value,
-//       first_name: document.querySelector('input[name="Firstname"]').value,
-//       last_name: document.querySelector('input[name="Lastname"]').value,
-//       email: document.querySelector('input[name="email"]').value,
-//       password: document.querySelector('input[name="pswd"]').value,
-//       phone: document.querySelector('input[placeholder="Enter Phone"]').value,
-//       city: document.querySelector('input[placeholder="City"]').value,
-//       lga: document.querySelector('input[placeholder="Enter LGA"]').value,
-//       country: document.querySelector("select").value,
-//     };
+    const data = {
+      username: document.querySelector('input[name="email"]').value,
+      first_name: document.querySelector('input[name="Firstname"]').value,
+      last_name: document.querySelector('input[name="Lastname"]').value,
+      email: document.querySelector('input[name="email"]').value,
+      password: document.querySelector('input[name="pswd"]').value,
+      phone: document.querySelector('input[placeholder="Enter Phone"]').value,
+      city: document.querySelector('input[placeholder="City"]').value,
+      lga: document.querySelector('input[placeholder="Enter LGA"]').value,
+      country: document.querySelector("select").value,
+    };
 
-//     const res = await fetch("http://127.0.0.1:8000/api/auth/signup/", {
-//       method: "POST",
-//       headers: { "Content-Type": "application/json" },
-//       body: JSON.stringify(data),
-//     });
+    const res = await fetch("http://127.0.0.1:8000/api/auth/signup/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
 
-//     const result = await res.json();
-//     if (res.ok) {
-//       alert("Signup successful!");
-//       window.location.href = "createacct.html";
-//     } else {
-//       alert("Signup failed: " + JSON.stringify(result));
-//     }
-//   });
+    const result = await res.json();
+    if (res.ok) {
+      alert("Signup successful!");
+      window.location.href = "createacct.html";
+    } else {
+      alert("Signup failed: " + JSON.stringify(result));
+    }
+  });
 
 
 
@@ -119,45 +119,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  // SIGNUP logic
-  const signupForm = document.getElementById("signup-form");
-  if (signupForm) {
-    signupForm.addEventListener("submit", async function (e) {
-      e.preventDefault();
+// document.addEventListener("DOMContentLoaded", function () {
+//   // SIGNUP logic
+//   const signupForm = document.getElementById("signup-form");
+//   if (signupForm) {
+//     signupForm.addEventListener("submit", async function (e) {
+//       e.preventDefault();
 
-      const data = {
-        first_name: document.querySelector('input[name="Firstname"]').value,
-        last_name: document.querySelector('input[name="Lastname"]').value,
-        email: document.querySelector('input[name="email"]').value,
-        password: document.querySelector('input[name="pswd"]').value,
-        phone: document.querySelector('input[placeholder="Enter Phone"]').value,
-        city: document.querySelector('input[placeholder="City"]').value,
-        lga: document.querySelector('input[placeholder="Enter LGA"]').value,
-        country: document.querySelector("select").value,
-      };
+//       const data = {
+//         first_name: document.querySelector('input[name="Firstname"]').value,
+//         last_name: document.querySelector('input[name="Lastname"]').value,
+//         email: document.querySelector('input[name="email"]').value,
+//         password: document.querySelector('input[name="pswd"]').value,
+//         phone: document.querySelector('input[placeholder="Enter Phone"]').value,
+//         city: document.querySelector('input[placeholder="City"]').value,
+//         lga: document.querySelector('input[placeholder="Enter LGA"]').value,
+//         country: document.querySelector("select").value,
+//       };
 
-      try {
-        const res = await fetch("http://127.0.0.1:8000/api/auth/signup/", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data),
-        });
+//       try {
+//         const res = await fetch("http://127.0.0.1:8000/api/auth/signup/", {
+//           method: "POST",
+//           headers: { "Content-Type": "application/json" },
+//           body: JSON.stringify(data),
+//         });
 
-        const result = await res.json();
-        if (res.ok) {
-          alert("Signup successful!");
-          window.location.href = "createacct.html";
-        } else {
-          alert("Signup failed: " + JSON.stringify(result));
-        }
-      } catch (err) {
-        alert("Signup error occurred");
-        console.error(err);
-      }
-    });
-  }
-});
+//         const result = await res.json();
+//         if (res.ok) {
+//           alert("Signup successful!");
+//           window.location.href = "createacct.html";
+//         } else {
+//           alert("Signup failed: " + JSON.stringify(result));
+//         }
+//       } catch (err) {
+//         alert("Signup error occurred");
+//         console.error(err);
+//       }
+//     });
+//   }
+// });
 
 
     //     const data = {
@@ -192,37 +192,121 @@ document.addEventListener("DOMContentLoaded", function () {
   
   
   
+  //  OLD LOGIN FORM
   
- const loginForm = document.getElementById("login-form");
-if (loginForm) {
-  loginForm.addEventListener("submit", async function (e) {
-    e.preventDefault();
+    // const loginForm = document.getElementById("login-form");
+    // if (loginForm) {
+    //   loginForm.addEventListener("submit", async function (e) {
+    //     e.preventDefault();
 
-    const email = document.querySelector('input[name="email"]').value;
-    const password = document.querySelector('input[name="pswd"]').value;
+    //     const email = document.querySelector('input[name="email"]').value;
+    //     const password = document.querySelector('input[name="pswd"]').value;
 
-    try {
-      const res = await fetch("http://127.0.0.1:8000/api/auth/login/", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
-      });
+    //     try {
+    //       const res = await fetch("http://127.0.0.1:8000/api/auth/login/", {
+    //         method: "POST",
+    //         headers: { "Content-Type": "application/json" },
+    //         body: JSON.stringify({ email, password }),
+    //       });
 
-      const data = await res.json();
-      console.log("Login response:", data); // Add this to inspect the response
+    //       const data = await res.json();
+    //       console.log("Login response:", data); // Add this to inspect the response
 
-      if (res.ok) {
-        localStorage.setItem("token", data.access); // ✅ store the right token
-        window.location.href = "Shop.html";
-      } else {
-        alert("Login failed: " + (data.detail || "Invalid credentials"));
-      }
-    } catch (error) {
-      alert("Login error occurred");
-      console.error(error);
-    }
-  });
-}
+    //       if (res.ok) {
+    //         localStorage.setItem("token", data.access); // ✅ store the right token
+    //         window.location.href = "Shop.html";
+    //       } else {
+    //         alert("Login failed: " + (data.detail || "Invalid credentials"));
+    //       }
+    //     } catch (error) {
+    //       alert("Login error occurred");
+    //       console.error(error);
+    //     }
+    //   });
+    // }
+
+//  END OF OLD ONE
+
+
+
+
+// NEW LOGIN FORM
+
+
+
+
+// END OF NEW LOGIN 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
@@ -260,37 +344,64 @@ if (loginForm) {
 // });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const token = localStorage.getItem("token");
-  console.log("Token from storage:", token);
+    const token = localStorage.getItem("token");
 
     fetch("http://127.0.0.1:8000/api/auth/profile/", {
-        method: "GET",
-        headers: {
-        "Authorization": `Bearer ${token}`,
+    method: "GET",
+    headers: {
+        "Authorization": `Token ${token}`, // ✅ correct prefix
         "Content-Type": "application/json"
-        }
+    }
     })
-    .then(response => {
-        if (!response.ok) throw new Error("Not authorized");
-        return response.json();
+    .then(res => {
+    if (!res.ok) {
+        throw new Error(`HTTP error! Status: ${res.status}`);
+    }
+    return res.json();
     })
     .then(data => {
-        document.getElementById("firstname").innerText = data.first_name;
-        document.getElementById("lastname").innerText = data.last_name;
-        document.getElementById("email").innerText = data.email;
-        document.getElementById("phone").innerText = data.phone;
-        document.getElementById("city").innerText = data.city;
-        document.getElementById("lga").innerText = data.lga;
-        document.getElementById("country").innerText = data.country;
+    console.log("Profile data:", data);
     })
-
     .catch(error => {
-        console.error("Profile fetch error:", error);
-        alert("Error loading profile. Please log in again.");
-        window.location.href = "createacct.html";
+    console.error("Profile fetch error:", error);
     });
-});
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const token = localStorage.getItem("token");
+//   console.log("Token from storage:", token);
+
+//     fetch("http://127.0.0.1:8000/api/auth/profile/", {
+//         method: "GET",
+//         headers: {
+//             "Authorization": `Token ${token}`, // <--- VERY IMPORTANT
+//             "Content-Type": "application/json",
+//         },
+//     })
+//     .then(response => {
+//         if (!response.ok) throw new Error("Not authorized");
+//         return response.json();
+//     })
+//     .then(data => {
+//         // document.getElementById("firstname").innerText = data.first_name;
+//         // document.getElementById("lastname").innerText = data.last_name;
+//         // document.getElementById("email").innerText = data.email;
+//         // document.getElementById("phone").innerText = data.phone;
+//         // document.getElementById("city").innerText = data.city;
+//         // document.getElementById("lga").innerText = data.lga;
+//         // document.getElementById("country").innerText = data.country;
+
+//         console.log("Profile data:", data);
+//     })
+
+//     // .catch(error => {
+//     //     console.error("Profile fetch error:", error);
+//     //     alert("Error loading profile. Please log in again.");
+//     //     window.location.href = "createacct.html";
+//     // });
+//     .catch(error => {
+//     console.error("Profile fetch error:", error);
+// });
+// });
 
 
 // async function getProfile() {
