@@ -184,30 +184,39 @@
         </div>
 
         <div class="mb-3 mt-3">
-          <label for="text" class="form-label">Phone:</label>
-          <input type="number" class="form-control" id="phone" placeholder="Enter Phone" name="phone" required>
+        <label for="phone" class="form-label">Phone:</label>
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="+234..." required>
         </div>
 
+
         <div class="mb-3 mt-3">
-          <label for="text" class="form-label">City:</label>
-          <input type="text" class="form-control" id="city" placeholder="City" name="city" required>
+        <label for="country" class="form-label">Country:</label>
+          <select class="form-select" id="country" name="country" required>
+            <option value="">Select country</option>
+          </select>
         </div>
+        
+        <div class="mb-3 mt-3">
+        <label for="country" class="form-label">State:</label>
+          <select class="form-select" id="state" name="state" required>
+            <option value="">Select state</option>
+          </select>
+        </div>
+
+        <!-- <div class="mb-3 mt-3">
+          <label for="text" class="form-label">City:</label>
+          <select class="form-select" id="city" name="city" required>
+            <option value="">Select city</option>
+          </select>
+        </div> -->
 
         <div class="mb-3 mt-3">
           <label for="text" class="form-label">LGA:</label>
-          <input type="text" class="form-control" id="lga" placeholder="Enter LGA" name="lga" required>
-        </div>
-
-        <div class="mb-3 mt-3">
-          <label for="text" class="form-label">Country:</label>
-          <select class="form-select">
-            <option>Nigeria</option>
-            <option>Canada</option>
-            <option>Italy</option>
-            <option>U.S.A</option>
-            <option>United Kingdom</option>
+          <select class="form-select" id="lga" name="lga" required>
+            <option value="">Select LGA</option>
           </select>
         </div>
+
 
         <div class="form-check mb-3">
           <label class="form-check-label">
