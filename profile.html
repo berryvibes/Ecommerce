@@ -7,6 +7,7 @@
      <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="icon" href="css/carrr.png" type="img/x-icon">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap-grid.css.map">
@@ -171,39 +172,27 @@
 
 
 
- <div class="container-fluid mt-5" id="division1">
-    <div class="profile-box">
-      <h3 class="text-center mb-4">Welcome, <span id="firstname">[Firstname]</span></h3>
-      <p class="text-center text-muted" id="email">[Email]</p>
+  <div class="container-fluid profile-container text-center mt-lg-5 ">
+    <h2 id="welcome-message">Welcome, [Name]</h2>
+    <p id="email-display">[Email]</p>
 
-      <div class="row">
-        <div class="col-lg-6 mb-3">
-          <label class="profile-label">First Name:</label>
-          <p class="value" id="profile-firstname">...</p>
-        </div>
-        <div class="col-lg-6 mb-3">
-          <label class="profile-label">Last Name:</label>
-          <p class="value" id="profile-lastname">...</p>
-        </div>
-        <div class="col-lg-6 mb-3">
-          <label class="profile-label">Phone:</label>
-          <p class="value" id="profile-phone">...</p>
-        </div>
-        <div class="col-lg-6 mb-3">
-          <label class="profile-label">City:</label>
-          <p class="value" id="profile-city">...</p>
-        </div>
-        <div class="col-lg-6 mb-3">
-          <label class="profile-label">LGA:</label>
-          <p class="value" id="profile-lga">...</p>
-        </div>
-        <div class="col-lg-6 mb-3">
-          <label class="profile-label">Country:</label>
-          <p class="value" id="profile-country">...</p>
-        </div>
-      </div>
+    <div class="profile-card mt-4 text-start">
+      <h5 class="mb-3">Your Profile</h5>
+      <p><span class="info-label">Full Name:</span> <span id="fullname">...</span></p>
+      <p><span class="info-label">Phone:</span> <span id="phone">...</span></p>
+      <p><span class="info-label">City:</span> <span id="city">...</span></p>
+      <p><span class="info-label">LGA:</span> <span id="lga">...</span></p>
+      <p><span class="info-label">Country:</span> <span id="country">...</span></p>
     </div>
   </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -231,16 +220,6 @@
       <img src="./css/Card Arrow.webp" alt="">
     </button>
   </div>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -332,7 +311,7 @@
 <script src="bootstrap-5.3.1-dist/js/bootstrap.js"></script>
 <script src="https://kit.fontawesome.com/473ac6f407.js" crossorigin="anonymous"></script>
 <script src="./js/navbar-auth.js"></script>
-<!-- <script src="./js/profile-auth.js"></script> -->
+<script src="./js/profile-auth.js"></script>
 
 </body>
 </html>

@@ -340,7 +340,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (response.ok) {
         alert("Login successful");
         // save token or redirect here
-        localStorage.setItem("token", data.access); // ✅ store the right token
+        localStorage.setItem("token", data.token); // ✅ store the right token
         window.location.href = "Shop.html";
         console.log(data);
       } else {
@@ -352,7 +352,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 </script>
-<script src="./js/sript.js"></script>
+<script src="./js/script.js"></script>
 <script src="bootstrap-5.3.1-dist/js/bootstrap.js"></script>
 <script src="https://kit.fontawesome.com/473ac6f407.js" crossorigin="anonymous"></script>
 <script src="./js/navbar-auth.js"></script>

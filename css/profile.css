@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ body{
+    background-image: none;
+ }
+
+    .profile-container {
+      max-width: 600px;
+      margin: 40px auto;
+    }
+    .profile-card {
+        padding: 2em 2em;
+      background-color: #ffffff;
+      width: auto ;
+      /* padding: 30px; */
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .profile-card h5 {
+      font-weight: 600;
+    }
+    .info-label {
+      font-weight: bold;
+      color: #555;
+    }
