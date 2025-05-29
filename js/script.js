@@ -24,35 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.getElementById("signup-form").addEventListener("submit", async function (e) {
-    e.preventDefault();
 
-    const data = {
-      username: document.querySelector('input[name="email"]').value,
-      first_name: document.querySelector('input[name="Firstname"]').value,
-      last_name: document.querySelector('input[name="Lastname"]').value,
-      email: document.querySelector('input[name="email"]').value,
-      password: document.querySelector('input[name="pswd"]').value,
-      phone: document.querySelector('input[placeholder="Enter Phone"]').value,
-      city: document.querySelector('input[placeholder="City"]').value,
-      lga: document.querySelector('input[placeholder="Enter LGA"]').value,
-      country: document.querySelector("select").value,
-    };
-
-    const res = await fetch("http://127.0.0.1:8000/api/auth/signup/", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
-
-    const result = await res.json();
-    if (res.ok) {
-      alert("Signup successful!");
-      window.location.href = "createacct.html";
-    } else {
-      alert("Signup failed: " + JSON.stringify(result));
-    }
-  });
 
 
 
@@ -344,27 +316,27 @@ document.getElementById("signup-form").addEventListener("submit", async function
 // });
 
 
-    const token = localStorage.getItem("token");
+    // const token = localStorage.getItem("token");
 
-    fetch("http://127.0.0.1:8000/api/auth/profile/", {
-    method: "GET",
-    headers: {
-        "Authorization": `Token ${token}`, // ✅ correct prefix
-        "Content-Type": "application/json"
-    }
-    })
-    .then(res => {
-    if (!res.ok) {
-        throw new Error(`HTTP error! Status: ${res.status}`);
-    }
-    return res.json();
-    })
-    .then(data => {
-    console.log("Profile data:", data);
-    })
-    .catch(error => {
-    console.error("Profile fetch error:", error);
-    });
+    // fetch("http://127.0.0.1:8000/api/auth/profile/", {
+    // method: "GET",
+    // headers: {
+    //     "Authorization": `Token ${token}`, // ✅ correct prefix
+    //     "Content-Type": "application/json"
+    // }
+    // })
+    // .then(res => {
+    // if (!res.ok) {
+    //     throw new Error(`HTTP error! Status: ${res.status}`);
+    // }
+    // return res.json();
+    // })
+    // .then(data => {
+    // console.log("Profile data:", data);
+    // })
+    // .catch(error => {
+    // console.error("Profile fetch error:", error);
+    // });
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   const token = localStorage.getItem("token");
@@ -414,3 +386,55 @@ document.getElementById("signup-form").addEventListener("submit", async function
 //   const data = await res.json();
 //   console.log(data);
 // }
+
+
+
+
+// document.addEventListener("DOMContentLoaded", async () => {
+//   const token = localStorage.getItem("token");
+
+//   if (!token) {
+//     alert("Not logged in");
+//     return window.location.href = "createacct.html";
+//   }
+
+//   try {
+//     const res = await fetch("http://127.0.0.1:8000/api/auth/profile/", {
+//       headers: {
+//         Authorization: `Token ${token}`, // ✅ token is now defined
+//         "Content-Type": "application/json"
+//       }
+//     });
+
+//     const data = await res.json();
+//     console.log("Profile data:", data);
+
+//     if (res.ok) {
+//       document.getElementById("firstname").textContent = data.firstname;
+//       document.getElementById("email").textContent = data.email;
+//       document.getElementById("profile-firstname").textContent = data.firstname;
+//       document.getElementById("profile-lastname").textContent = data.last_name;
+//       document.getElementById("profile-phone").textContent = data.phone;
+//       document.getElementById("profile-city").textContent = data.city;
+//       document.getElementById("profile-lga").textContent = data.lga;
+//       document.getElementById("profile-country").textContent = data.country;
+//       //       username: document.querySelector('input[name="email"]').value,
+//       // first_name: document.querySelector('input[name="Firstname"]').value,
+//       // last_name: document.querySelector('input[name="Lastname"]').value,
+//       // email: document.querySelector('input[name="email"]').value,
+//       // password: document.querySelector('input[name="pswd"]').value,
+//       // phone: document.querySelector('input[placeholder="Enter Phone"]').value,
+//       // city: document.querySelector('input[placeholder="City"]').value,
+//       // lga: document.querySelector('input[placeholder="Enter LGA"]').value,
+//       // country: document.querySelector("select").value,
+//     } else {
+//       alert("Unauthorized");
+//       localStorage.removeItem("token");
+//       window.location.href = "createacct.html";
+//     }
+//   } catch (err) {
+//     console.error("Error fetching profile:", err);
+//     alert("Something went wrong.");
+//   }
+// });
+

@@ -35,64 +35,52 @@
 
 
   <!-- First Nav -->
-  <nav class="navbar bg sticky-top">
-    <div class="container-fluid px-2 mt-3 navibra">
-      <a class="navbar-brand  navImg text-white fw-bold fs-3" href="#"><img src="css/becare.png" width="55"><span
-          id="navImg">BERRYCARE</span></a>
-      <button class="navbar-toggler active bg-light" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
-      </button>
+<nav class="navbar bg sticky-top">
+  <div class="container-fluid px-2 mt-3 navibra">
+    <a class="navbar-brand navImg text-white fw-bold fs-3" href="#">
+      <img src="css/becare.png" width="55">
+      <span id="navImg">BERRYCARE</span>
+    </a>
+    <button class="navbar-toggler active bg-light" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">BERRYCARE</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
 
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title " id="offcanvasNavbarLabel">BERRYCARE</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="Aboutus.html">About</a></li>
+        </ul>
 
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Shop.html"> Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html"> Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Aboutus.html"> About</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li> -->
-          </ul>
+        <form class="container-fluid justify-content-start">
+          <div class="guest-only">
+            <a href="createacct.html" class="btn btn-outline-success me-2">Login</a>
+            <a href="create.html" class="btn btn-sm btn-outline-secondary">Create Account</a>
+          </div>
 
-          <form class="container-fluid justify-content-start">
-            <button class="btn btn-outline-success me-2" type="button"><a href="createacct.html"> Login</a></button>
-            <button class="btn btn-sm btn-outline-secondary" type="button"><a href="create.html">Create
-                Account</a></button>
-          </form>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+          <div class="auth-required d-none">
+            <a href="profile.html" class="btn btn-outline-primary me-2">👤 Profile</a>
+            <button id="logout-btn" class="btn btn-outline-danger" type="button">Logout</button>
+          </div>
+        </form>
+
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
+
   <!-- End of first nav -->
 
 
@@ -604,6 +592,11 @@
 <script src="./js/script.js"></script>
 <script src="bootstrap-5.3.1-dist/js/bootstrap.js"></script>
 <script src="https://kit.fontawesome.com/473ac6f407.js" crossorigin="anonymous"></script>
+<script src="navbar-auth.js"></script>
+
+
+
+
 </body>
 
 </html>

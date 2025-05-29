@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <link rel="stylesheet" type="text/css" href="css/font.css">
+     <title>Profile | BerryCare</title>
+     <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="icon" href="css/carrr.png" type="img/x-icon">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
@@ -29,65 +29,93 @@
 <body>
    
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- First Nav -->
-  <nav class="navbar bg sticky-top">
-    <div class="container-fluid px-2 mt-3 navibra">
-      <a class="navbar-brand  navImg text-white fw-bold fs-3" href="#"><img src="css/becare.png" width="55"><span
-          id="navImg">BERRYCARE</span></a>
-      <button class="navbar-toggler active bg-light" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
-      </button>
+<nav class="navbar bg sticky-top">
+  <div class="container-fluid px-2 mt-3 navibra">
+    <a class="navbar-brand navImg text-white fw-bold fs-3" href="#">
+      <img src="css/becare.png" width="55">
+      <span id="navImg">BERRYCARE</span>
+    </a>
+    <button class="navbar-toggler active bg-light" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">BERRYCARE</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
 
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title " id="offcanvasNavbarLabel">BERRYCARE</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="Aboutus.html">About</a></li>
+        </ul>
 
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Shop.html"> Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html"> Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Aboutus.html"> About</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li> -->
-          </ul>
+        <form class="container-fluid justify-content-start">
+          <div class="guest-only">
+            <a href="createacct.html" class="btn btn-outline-success me-2">Login</a>
+            <a href="create.html" class="btn btn-sm btn-outline-secondary">Create Account</a>
+          </div>
 
-          <form class="container-fluid justify-content-start">
-            <button class="btn btn-outline-success me-2" type="button"><a href="createacct.html"> Login</a></button>
-            <button class="btn btn-sm btn-outline-secondary" type="button"><a href="create.html">Create
-                Account</a></button>
-          </form>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+          <div class="auth-required d-none">
+            <a href="profile.html" class="btn btn-outline-primary me-2">👤 Profile</a>
+            <button id="logout-btn" class="btn btn-outline-danger" type="button">Logout</button>
+          </div>
+        </form>
+
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
+
   <!-- End of first nav -->
 
 
@@ -101,23 +129,129 @@
 
 
 
+  <div id="carouselExampleSlidesOnly" style="margin-top: -90px;" class="carousel slide" data-bs-ride="carousel">
 
+    <div class="carousel-inner">
 
-
-
-
-
-
-    <h2>User Profile</h2>
-    <div id="profile-container">
-        <p><strong>Firstname:</strong> <span id="firstname"></span></p>
-        <p><strong>Lastname:</strong> <span id="lastname"></span></p>
-        <p><strong>Email:</strong> <span id="email"></span></p>
-        <p><strong>Phone:</strong> <span id="phone"></span></p>
-        <p><strong>City:</strong> <span id="city"></span></p>
-        <p><strong>LGA:</strong> <span id="lga"></span></p>
-        <p><strong>Country:</strong> <span id="country"></span></p>
+      <div class="carousel-item active">
+        <img src="css/skiinn.jpg" class="d-block w-100" alt="..." width="100%">
+        <div class="carousel-caption  d-md-block " id="carousel">
+          <h5>Get up to 10% Discount</h5>
+          <p>You won't regret shopping with us!!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="css/skiin2.jpg" class="d-block w-100" alt="..." width="100%">
+        <div class="carousel-caption  d-md-block " id="carousel">
+          <h5>Get up to 20% Discount</h5>
+          <p>You won't regret shopping with us!!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="css/skiin.webp" class="d-block w-100" alt="..." width="100%">
+        <div class="carousel-caption  d-md-block " id="carousel">
+          <h5>Get up to 30% Discount</h5>
+          <p>You won't regret shopping with us!!</p>
+        </div>
+      </div>
     </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="container-fluid mt-5" id="division1">
+    <div class="profile-box">
+      <h3 class="text-center mb-4">Welcome, <span id="firstname">[Firstname]</span></h3>
+      <p class="text-center text-muted" id="email">[Email]</p>
+
+      <div class="row">
+        <div class="col-lg-6 mb-3">
+          <label class="profile-label">First Name:</label>
+          <p class="value" id="profile-firstname">...</p>
+        </div>
+        <div class="col-lg-6 mb-3">
+          <label class="profile-label">Last Name:</label>
+          <p class="value" id="profile-lastname">...</p>
+        </div>
+        <div class="col-lg-6 mb-3">
+          <label class="profile-label">Phone:</label>
+          <p class="value" id="profile-phone">...</p>
+        </div>
+        <div class="col-lg-6 mb-3">
+          <label class="profile-label">City:</label>
+          <p class="value" id="profile-city">...</p>
+        </div>
+        <div class="col-lg-6 mb-3">
+          <label class="profile-label">LGA:</label>
+          <p class="value" id="profile-lga">...</p>
+        </div>
+        <div class="col-lg-6 mb-3">
+          <label class="profile-label">Country:</label>
+          <p class="value" id="profile-country">...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div>
+    <button title="go to top" id="myBtn">
+      <img src="./css/Card Arrow.webp" alt="">
+    </button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -190,8 +324,15 @@
   </footer>
   <!-- Footer -->
 
+
+
+
+
 <script type="module" src="./js/script.js"></script> <!-- ✅ -->
 <script src="bootstrap-5.3.1-dist/js/bootstrap.js"></script>
 <script src="https://kit.fontawesome.com/473ac6f407.js" crossorigin="anonymous"></script>
+<script src="./js/navbar-auth.js"></script>
+<!-- <script src="./js/profile-auth.js"></script> -->
+
 </body>
 </html>
